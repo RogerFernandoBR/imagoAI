@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #208a7e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' id='visual' viewBox='0 0 900 600' width='900' height='600' version='1.1'%3E%3Crect x='0' y='0' width='900' height='600' fill='%23001220'/%3E%3Cpath d='M0 408L21.5 409.7C43 411.3 86 414.7 128.8 408.3C171.7 402 214.3 386 257.2 389.3C300 392.7 343 415.3 385.8 412.8C428.7 410.3 471.3 382.7 514.2 381.8C557 381 600 407 642.8 409.7C685.7 412.3 728.3 391.7 771.2 378.7C814 365.7 857 360.3 878.5 357.7L900 355L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z' fill='%2394dbd3'/%3E%3Cpath d='M0 430L21.5 434.8C43 439.7 86 449.3 128.8 446.2C171.7 443 214.3 427 257.2 428C300 429 343 447 385.8 452.7C428.7 458.3 471.3 451.7 514.2 445C557 438.3 600 431.7 642.8 429.8C685.7 428 728.3 431 771.2 425.7C814 420.3 857 406.7 878.5 399.8L900 393L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z' fill='%237ac6bd'/%3E%3Cpath d='M0 463L21.5 460.7C43 458.3 86 453.7 128.8 459.5C171.7 465.3 214.3 481.7 257.2 487.5C300 493.3 343 488.7 385.8 483.5C428.7 478.3 471.3 472.7 514.2 474.5C557 476.3 600 485.7 642.8 492.5C685.7 499.3 728.3 503.7 771.2 500.8C814 498 857 488 878.5 483L900 478L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z' fill='%235fb2a8'/%3E%3Cpath d='M0 515L21.5 511C43 507 86 499 128.8 503.5C171.7 508 214.3 525 257.2 530.8C300 536.7 343 531.3 385.8 521.5C428.7 511.7 471.3 497.3 514.2 490.5C557 483.7 600 484.3 642.8 492.8C685.7 501.3 728.3 517.7 771.2 524.7C814 531.7 857 529.3 878.5 528.2L900 527L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z' fill='%23439e93'/%3E%3Cpath d='M0 558L21.5 560C43 562 86 566 128.8 565.2C171.7 564.3 214.3 558.7 257.2 551.5C300 544.3 343 535.7 385.8 531.2C428.7 526.7 471.3 526.3 514.2 533.2C557 540 600 554 642.8 555.7C685.7 557.3 728.3 546.7 771.2 540.2C814 533.7 857 531.3 878.5 530.2L900 529L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z' fill='%23208a7e'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#background-svg {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -10;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container > svg {
+    position: absolute;
+    top: 40px;
+    width: 200px;
+}
+
+.body-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    max-height: calc(100vh - 290px);
+    overflow: auto;
+}
+
+.body-container .image-container {
+    width: 300px;
+    height: 300px;
+    background-color: darkgray;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.body-container .image-container img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container > input {
+    bottom: 40px;
+    position: absolute;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+}
+
+.footer-container #submit-button {
+    position: absolute;
+    bottom: 45px;
+    font-size: 25px;
+    color: #208a7e;
+    right: calc(25vw);    
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-container #submit-button:hover {
+    background-color: #d9fbf7;
+    border-radius: 100%;
+}
+
+@media (max-width: 1000px) {
+    .footer-container > input {
+        width: 80%;
+    }
+
+    .footer-container #submit-button {
+        right: calc(10vw);
+    }
+  }
